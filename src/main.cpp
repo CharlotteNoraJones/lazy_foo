@@ -7,6 +7,12 @@ const int SCREEN_WIDTH = 640;
 const int SCREEN_HEIGHT = 480;
 
 int main(int argc, char* args[]) {
+  // These parameters are necessary for SDL2 to function, but won't be used in
+  // our code. The are cast to void to avoid compiler warnings about unused
+  // variables
+  (void)argc;
+  (void)args;
+
   SDL_Window* window = NULL;
 
   SDL_Surface* screenSurface = NULL;
